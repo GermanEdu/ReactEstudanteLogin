@@ -1,0 +1,80 @@
+.novo-estudante-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinha o conteúdo ao centro */
+}
+
+.novo-estudante-container .content {
+    width: 100%;
+    max-width: 800px; /* Ajusta a largura máxima do content */
+    padding: 96px;
+    background: #F0F0F5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+.novo-estudante-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.novo-estudante-container .content form input {
+    margin-top: 8px;
+}
+
+.form-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-body input {
+    width: 100%;
+    max-width: 400px; /* Aumenta a largura máxima dos inputs */
+    padding: 15px; /* Aumenta o padding dos inputs */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Aumenta o tamanho da fonte dos inputs */
+}
+
+.button {
+    width: 100%;
+    max-width: 200px;
+    /* Aumenta a largura máxima do botão */
+    padding: 2px;
+    background-color: #28a745;
+    /* Cor verde mais clara para o botão */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    /* Aumenta o tamanho da fonte do botão */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    height: 60px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+
+}
+
+.button:hover {
+    background-color: #218838; /* Cor mais escura no hover */
+}
