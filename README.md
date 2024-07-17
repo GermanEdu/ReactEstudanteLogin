@@ -1,6 +1,39 @@
 <<<<<<< HEAD
 # ReactEstudanteLogin
 Front End Para consumir a API do crud
+
+
+# AlunosApi
+
+Este é o projeto AlunosApi, uma API desenvolvida para gerenciar informações de alunos. Abaixo estão as instruções para clonar, instalar e usar a API, além de uma explicação básica sobre seu funcionamento.
+
+## Índice
+
+1. [Pré-requisitos](#pré-requisitos)
+2. [Instalação](#instalação)
+3. [Uso](#uso)
+4. [Funcionamento Básico](#funcionamento-básico)
+5. [Adicionar Imagem no README](#adicionar-imagem-no-readme)
+6. [Contato](#contato)
+
+## Pré-requisitos
+
+- Git
+- Node.js e npm (Node Package Manager)
+- Banco de dados (por exemplo, MongoDB)
+
+## Instalação
+
+### 1. Clonar o repositório
+
+Primeiro, clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/GermanEdu/ApiEstudanteLogin.git
+
+A aplicação estará rodando em http://localhost:3000.
+
+
 =======
 # Getting Started with Create React App
 
