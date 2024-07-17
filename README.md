@@ -10,6 +10,9 @@ Front End Para consumir a API do crud
 
 Este é o projeto AlunosApi, uma API desenvolvida para gerenciar informações de alunos. Abaixo estão as instruções para clonar, instalar e usar a API, além de uma explicação básica sobre seu funcionamento.
 
+![listaEstud](https://github.com/user-attachments/assets/afd6ad87-0e2f-4c63-af9d-fa237787346e)
+
+
 ## Índice
 
 1. [Pré-requisitos](#pré-requisitos)
