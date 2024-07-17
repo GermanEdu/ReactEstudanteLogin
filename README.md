@@ -2,6 +2,9 @@
 # ReactEstudanteLogin
 Front End Para consumir a API do crud
 
+![loginini](https://github.com/user-attachments/assets/fb92f66c-9aec-47f0-a3fd-20c1696f8759)
+
+
 
 # AlunosApi
 
@@ -19,7 +22,7 @@ Este é o projeto AlunosApi, uma API desenvolvida para gerenciar informações d
 - Node.js e npm (Node Package Manager)
 - Banco de dados (por exemplo, MongoDB)
 
-[loginini](https://github.com/user-attachments/assets/fe332e7b-472d-49f9-b026-92f5ebbd15e5)
+
 
 ## Instalação
 
@@ -57,7 +60,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-![listaEstud](https://github.com/user-attachments/assets/e9a58f67-df86-4867-bfe3-43366d432e86)
 
 
 Builds the app for production to the `build` folder.\
