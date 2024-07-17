@@ -11,10 +11,7 @@ Este é o projeto AlunosApi, uma API desenvolvida para gerenciar informações d
 
 1. [Pré-requisitos](#pré-requisitos)
 2. [Instalação](#instalação)
-3. [Uso](#uso)
-4. [Funcionamento Básico](#funcionamento-básico)
-5. [Adicionar Imagem no README](#adicionar-imagem-no-readme)
-6. [Contato](#contato)
+
 
 ## Pré-requisitos
 
