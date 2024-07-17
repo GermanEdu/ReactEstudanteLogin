@@ -19,6 +19,8 @@ Este é o projeto AlunosApi, uma API desenvolvida para gerenciar informações d
 - Node.js e npm (Node Package Manager)
 - Banco de dados (por exemplo, MongoDB)
 
+[loginini](https://github.com/user-attachments/assets/fe332e7b-472d-49f9-b026-92f5ebbd15e5)
+
 ## Instalação
 
 ### 1. Clonar o repositório
@@ -44,9 +46,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-![loginini](https://github.com/user-attachments/assets/fe332e7b-472d-49f9-b026-92f5ebbd15e5)
-
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
