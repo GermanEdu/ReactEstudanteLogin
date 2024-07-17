@@ -50,7 +50,12 @@ export default function NovoEstudante() {
 
     async function saveOrUpdate(event) {
         event.preventDefault();
-        
+
+        if (!nome || !idade || !dataNascimento) {
+            alert('Os campos Nome, Idade e Data de Nascimento são obrigatórios.');
+            return;
+        }
+
         const data = {
             nome,
             idade: parseInt(idade, 10),
@@ -79,6 +84,23 @@ export default function NovoEstudante() {
         }
     }
 
+    function handleSoNumerosChange(e, campo) {
+        const valor = e.target.value;
+        if (campo === 'idade' && /^\d*$/.test(valor)) {
+            setIdade(valor);
+        } else if (campo === 'serie' && /^\d*\.?\d*$/.test(valor)) {
+            setSerie(valor);
+        }
+    }
+    
+
+    const handleNotaMediaChange = (e) => {
+        const value = e.target.value;
+        if (/^\d*\.?\d*$/.test(value)) {
+            setNotaMedia(value);
+        }
+    };
+
     return (
         <div className="novo-estudante-container">
             <div className="content">
@@ -87,14 +109,51 @@ export default function NovoEstudante() {
                     <h1>{estudanteid === '0' ? 'Incluir Novo Estudante' : 'Atualizar Estudante'}</h1>
                 </section>
                 <form onSubmit={saveOrUpdate} className="form-body">
-                    <input placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)} />
-                    <input placeholder="Idade" value={idade} onChange={e => setIdade(e.target.value)} />
-                    <input placeholder="Série" value={serie} onChange={e => setSerie(e.target.value)} />
-                    <input placeholder="Nota Media" value={notaMedia} onChange={e => setNotaMedia(e.target.value)} />
-                    <input placeholder="Endereco" value={endereco} onChange={e => setEndereco(e.target.value)} />
-                    <input placeholder="Nome do Pai" value={nomePai} onChange={e => setNomePai(e.target.value)} />
-                    <input placeholder="Nome da Mãe" value={nomeMae} onChange={e => setNomeMae(e.target.value)} />
-                    <input type="date" placeholder="Data de Nascimento" value={dataNascimento} onChange={e => setDataNascimento(e.target.value)} />
+                    <input
+                        placeholder="Nome"
+                        value={nome}
+                        onChange={e => setNome(e.target.value)}
+                        required
+                    />
+                  <input 
+    placeholder="Idade" 
+    value={idade} 
+    onChange={e => handleSoNumerosChange(e, 'idade')} 
+    required 
+/>
+<input 
+    placeholder="Série" 
+    value={serie} 
+    onChange={e => handleSoNumerosChange(e, 'serie')} 
+/>
+
+                    <input
+                        placeholder="Nota Media"
+                        value={notaMedia}
+                        onChange={handleNotaMediaChange}
+                    />
+                    <input
+                        placeholder="Endereco"
+                        value={endereco}
+                        onChange={e => setEndereco(e.target.value)}
+                    />
+                    <input
+                        placeholder="Nome do Pai"
+                        value={nomePai}
+                        onChange={e => setNomePai(e.target.value)}
+                    />
+                    <input
+                        placeholder="Nome da Mãe"
+                        value={nomeMae}
+                        onChange={e => setNomeMae(e.target.value)}
+                    />
+                    <input
+                        type="date"
+                        placeholder="Data de Nascimento"
+                        value={dataNascimento}
+                        onChange={e => setDataNascimento(e.target.value)}
+                        required
+                    />
                     <button className="button" type="submit">{estudanteid === '0' ? 'Incluir' : 'Atualizar'}</button>
                 </form>
                 <div>
